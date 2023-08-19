@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="box">
+    <p>Passowrd Generator</p>
+    <div class="pass-box">
+      <p id="password">P4SZW0?D</p>
+      <button id="copy">copy</button>
+    </div>
+
+    <div class="option">
+      <div class="c-l">
+        <div class="char">
+          <p>Character Lnegth</p>
+          <span id="length">8</span>
+        </div>
+        <input type="range" min="1" max="20" value="8" class="slider" id="myRange">
+      </div>
+      <ul class="opt">
+        <li><input type="checkbox" name="uppercase" id="uppercase"> <label for="uppercase">Include UPPERCASE</label></li>
+        <li><input type="checkbox" name="lowercase" id="lowercase"> <label for="lowercase">Include lowercase</label></li>
+        <li><input type="checkbox" name="number" id="number"> <label for="number">Include Number</label></li>
+        <li><input type="checkbox" name="symbol" id="symbol"> <label for="symbol">Include Symbol</label></li>
+      </ul>
+
+      <div class="s-l">
+        <p>STRENGTH</p>
+        <!--<span id="strength">Strong</span>-->
+        <ul class="str">
+          <li class="weak" id="weak"></li>
+          <li class="fair" id="fair"></li>
+          <li class="medium" id="medium"></li>
+          <li class="strong" id="strong"></li>
+          
+        </ul>
+      </div>
+      <button id="generate">
+        <span>GENERATE</span>
+        <span>→</span></button>
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>
